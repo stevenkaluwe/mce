@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mce</title>
+</head>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+header nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+ header nav ul li a{
+     font-size: 16px;
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+ }
+section{
+    padding: 20px;
+    margin: 20px;
+}
+header nav ul li a:hover{
+    color: #222;
+    background: rgba(255, 68, 0, 0.651);
+}
+
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="College Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#compus-life">Compus Life</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Banner Section-->
+    <section id="home">
+        <h1>Welcome to Mpika College of Education</h1>
+        <p>Education in it Fullist</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are the prestigious institution committed to providing quality education</p>
+    </section>
+    <section id="academics">
+        <h2>Academic Programs</h2>
+        <p>Explore our Undergraduate programs</p>
+    </section>
+    <section id="admission">
+        <h2></h2>
+        <p>Apply now to become part of our college</p>
+    </section>
+    <section id="campus-life">
+        <h2>Campus Life</h2>
+        <p>Get involved in various student organization and campus activities</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email</label><input type="email" name="email" id="email" required><br>
+            <textarea name="message" id="message" placeholder="Your message"></textarea><br>
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <p>&COPY; 2024 Mpika college of Education | All Rights Reserved</p>
+        <p>&COPY; 2024 created by KALUWE STEVEN</p>
+        
+    </footer>
+
+</body>
+</html>
