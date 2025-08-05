@@ -3,112 +3,579 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mce</title>
-</head>
-<style>
-    body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    background-color: green;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-header nav ul li{
-    display: inline;
-    margin: 0 10px;
-}
- header nav ul li a{
-     font-size: 16px;
-     color: white;
-     text-decoration: none;
-     cursor: pointer;
- }
-section{
-    padding: 20px;
-    margin: 20px;
-}
-header nav ul li a:hover{
-    color: #222;
-    background: rgba(255, 68, 0, 0.651);
-}
-
-footer{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    position: inherit;
-    bottom: 0;
-    width: 100%;
-}
-
-</style>
-<body>
-    <!-- header section -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="College Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#admission">Admission</a></li>
-                <li><a href="#compus-life">Compus Life</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Main Banner Section-->
-    <section id="home">
-        <h1>Welcome to Mpika College of Education</h1>
-        <p>Education in it Fullist</p>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are the prestigious institution committed to providing quality education</p>
-    </section>
-    <section id="academics">
-        <h2>Academic Programs</h2>
-        <p>Explore our Undergraduate programs</p>
-    </section>
-    <section id="admission">
-        <h2></h2>
-        <p>Apply now to become part of our college</p>
-    </section>
-    <section id="campus-life">
-        <h2>Campus Life</h2>
-        <p>Get involved in various student organization and campus activities</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label><input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email</label><input type="email" name="email" id="email" required><br>
-            <textarea name="message" id="message" placeholder="Your message"></textarea><br>
-            <button type="submit">submit</button>
-        </form>
-    </section>
-
-    <!--Footer Section-->
-    <footer>
-        <p>&COPY; 2024 Mpika college of Education | All Rights Reserved</p>
-        <p>&COPY; 2024 created by KALUWE STEVEN</p>
+    <title>Zambian College of Teacher Education</title>
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #2980b9;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e67e22;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        .programs {
+            background-color: var(--light-color);
+        }
+        
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .program-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .program-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .program-content {
+            padding: 1.5rem;
+        }
+        
+        .program-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .program-content p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .application {
+            background-color: white;
+        }
+        
+        .application-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .contact {
+            background-color: var(--light-color);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .contact-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            border-top: 1px solid #444;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/60x60" alt="College Logo">
+                    <div class="logo-text">
+                        <h1>Zambian College of Teacher Education</h1>
+                        <p>Shaping the future of education</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#apply">Apply</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Become a Certified Teacher</h2>
+            <p>Join our prestigious teacher education programs and gain the skills and knowledge to make a difference in the lives of students across Zambia.</p>
+            <a href="#apply" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <section class="section programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Primary Education">
+                    <div class="program-content">
+                        <h3>Primary Teachers Diploma</h3>
+                        <p>A comprehensive program designed to prepare educators for teaching at the primary school level (Grades 1-7).</p>
+                        <p><strong>Duration:</strong> 3 years</p>
+                        <p><strong>Intakes:</strong> January and May</p>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Secondary Education">
+                    <div class="program-content">
+                        <h3>Secondary Teachers Diploma</h3>
+                        <p>Specialized training for teaching at the secondary school level (Grades 8-12) with subject combinations.</p>
+                        <p><strong>Duration:</strong> 3 years</p>
+                        <p><strong>Intakes:</strong> January and May</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section application" id="apply">
+        <div class="container">
+            <h2 class="section-title">Application Form</h2>
+            <form id="admissionForm" class="application-form" action="https://formsubmit.co/kaluwesteven50@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="New Application Submission">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nrc">National Registration Card Number*</label>
+                        <input type="text" id="nrc" name="nrc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address*</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="region">Region*</label>
+                        <select id="region" name="region" required>
+                            <option value="">Select Region</option>
+                            <option value="Central">Central</option>
+                            <option value="Copperbelt">Copperbelt</option>
+                            <option value="Eastern">Eastern</option>
+                            <option value="Luapula">Luapula</option>
+                            <option value="Lusaka">Lusaka</option>
+                            <option value="Muchinga">Muchinga</option>
+                            <option value="Northern">Northern</option>
+                            <option value="North-Western">North-Western</option>
+                            <option value="Southern">Southern</option>
+                            <option value="Western">Western</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="maritalStatus">Marital Status*</label>
+                        <select id="maritalStatus" name="maritalStatus" required>
+                            <option value="">Select Status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="intake">Intake*</label>
+                        <select id="intake" name="intake" required>
+                            <option value="">Select Intake</option>
+                            <option value="January Intake">January Intake</option>
+                            <option value="May Intake">May Intake</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program*</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="Primary Teachers Diploma">Primary Teachers Diploma</option>
+                            <option value="Secondary Teachers Diploma">Secondary Teachers Diploma</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group" id="combinationGroup" style="display: none;">
+                    <label for="combination">Combination (For Secondary Teachers Diploma)*</label>
+                    <select id="combination" name="combination">
+                        <option value="">Select Combination</option>
+                        <option value="Mathematics and ICT">Mathematics and ICT</option>
+                        <option value="English and RE">English and RE</option>
+                        <option value="Social sciences and ICT">Social sciences and ICT</option>
+                        <option value="Mathematics and ZL">Mathematics and ZL</option>
+                        <option value="Mathematics and PE">Mathematics and PE</option>
+                        <option value="Natural sciences">Natural sciences</option>
+                        <option value="Agriculture sciences">Agriculture sciences</option>
+                        <option value="Home economics">Home economics</option>
+                        <option value="Mathematics and RE">Mathematics and RE</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="results">Upload Your Results (PDF or Image)*</label>
+                    <input type="file" id="results" name="results" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Education Avenue<br>Lusaka, Zambia</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>admissions@zambiancollege.edu.zm<br>info@zambiancollege.edu.zm</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+260 211 123456<br>+260 966 123456</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Zambian College of Teacher Education is committed to training qualified teachers who will shape the future of education in Zambia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+                        <li><a href="#programs" style="color: white; text-decoration: none;">Programs</a></li>
+                        <li><a href="#apply" style="color: white; text-decoration: none;">Apply</a></li>
+                        <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Zambian College of Teacher Education. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        // Show/hide combination field based on program selection
+        document.getElementById('program').addEventListener('change', function() {
+            const combinationGroup = document.getElementById('combinationGroup');
+            const combinationSelect = document.getElementById('combination');
+            
+            if (this.value === 'Secondary Teachers Diploma') {
+                combinationGroup.style.display = 'block';
+                combinationSelect.required = true;
+            } else {
+                combinationGroup.style.display = 'none';
+                combinationSelect.required = false;
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            // You can add additional validation here if needed
+            console.log('Form submitted');
+        });
+    </script>
 </body>
 </html>
